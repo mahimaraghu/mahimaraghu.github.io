@@ -1,34 +1,240 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 15px;
+    box-sizing: border-box;
 }
 
-nav {
-    background-color: #333;
-    color: #f1f1f1;
-    padding: 15px;
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.nav {
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav h1 {
-    font-size: 20px;
-}
-
-nav span {
-    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav span a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    outline: none;
     color: inherit;
+    margin-right: 20px;
 }
 
-main section {
-    padding: 35px;
+main {
+    padding-top: 69px;
 }
+
+.hero {
+    min-height: 300px;
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero div h2 {
+    font-size: 32px;
+    text-shadow: 2px 2px rgba(180, 180, 180, .15);
+}
+
+.hero div p {
+    font-size: 18px;
+    letter-spacing: 1.75px;
+}
+
+.section {
+    min-height: 300px;
+    padding: 30px 60px;
+}
+
+.section_heading {
+    /* display: inline-block; */
+    background-image: linear-gradient(to top, #016b6b, #06afaf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 26px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #06afaf;
+    margin-bottom: 20px;
+}
+
+.container_about {
+    display: flex;
+    align-items: center;
+}
+
+.container_about .photo {
+    height: 380px;
+    width: 175px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    /* filter: brightness(1.1); */
+    /* filter: invert(100); */
+}
+
+.container_about .about {
+    padding: 30px;
+    flex: 1;
+    display: inline-block;
+}
+
+.about p {
+    font-size: 14px;
+    color: #444;
+    margin: 10px 0;
+}
+
+.about h3 {
+    font-size: 18px;
+    color: teal;
+    margin: 15px 0;
+}
+
+.about ul {
+    /* list-style-type: none; */
+    padding-left: 60px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.contact {
+    /* border: 2px solid black; */
+    /* border-radius: 4px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 300px; */
+    /* width: 400px; */
+    /* margin: 0 auto; */
+}
+
+.contact div input {
+    display: flex;
+    margin: 15px 0;
+    font-family: inherit;
+    width: 400px;
+    padding: 10px;
+    /* border: 2px solid black; */
+}
+
+.contact div textarea {
+    resize: none;
+    padding: 10px;
+    display: flex;
+    font-family: inherit;
+    width: 400px;
+    /* border: 2px solid black; */
+}
+
+#btn {
+    padding: 7px 15px;
+    margin-top: 20px;
+    background-color: rgb(163, 219, 219);
+    font-family: inherit;
+    font-size: 18px;
+    width: 100px;
+}
+
+#about:target::before,
+#contact:target::before,
+#skill:target::before {
+    content: "";
+    display: block;
+    padding-top: 69px;
+}
+
+.edu_wrapper {}
+
+.icon_p {
+    /* border: 2px solid black; */
+    /* border-radius: 6px; */
+    font-size: 40px;
+    margin-right: 20px;
+    background-image: linear-gradient(to top, #016b6b, #06afaf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* display: inline-block; */
+}
+
+.card {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border: 1px solid teal;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 40px 0;
+}
+
+.card_h2 {
+    color: #444;
+}
+
+.experience_wrapper ul {
+    padding-left: 40px;
+    list-style-type: none;
+}
+
+.experience_wrapper ul li {
+    font-size: 20px;
+    padding-left: 30px;
+    background-image: url(./images/star.svg);
+    background-position: 0 5px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    color: #232323;
+    font-weight: 400;
+}
+
+.experience_wrapper ul li p {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+}
+
+.skills_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.skills_wrapper h3 {
+    margin-right: 30px;
+    font-size: 20px;
+    color: #666;
+}
+
+.star {
+    color: goldenrod;
+}
+
+.skill_item {
+    display: flex;
+    margin: 10px 0;
+}
+
+.skill_item>span {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.skill_list {
+    margin-right: 80px;
+}
+
+
+/* .d_f {
+    display: flex !important;
+} */
