@@ -8,7 +8,9 @@
     <title>Mahima Raghuwanshi</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./mahi.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/mahi.css">
+
 </head>
 
 <body>
@@ -20,16 +22,18 @@
         <span>
 <a href="/">Home</a>
 <a href="#about">About</a>
-<a href="">Experience</a>
-<a href="">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
 <a href="https://github.com/mahimaraghu" target="_blank">GitHub</a>
 </span>
 
     </nav>
     <main>
+
         <section class="hero">
             <div class="">
+                <div class="greet"></div>
                 <h2>I'm Mahima Raghuwanshi</h2>
                 <p>Automation Engineer and CS Graduate</p>
             </div>
@@ -38,7 +42,6 @@
         <section class="section section_about" id="about">
             <h2 class="section_heading">About Me</h2>
             <br>
-
             <div class="container_about">
 
                 <img class="photo" src="images/mahima.jpg" alt="Mahima Raghuwanshi">
@@ -59,8 +62,6 @@
                     <p>
                         We only live once. So keep trying your best and not just stick to one thing. Always try to move forwards no matter what, Things will fall in place.
                     </p>
-
-
                 </div>
 
             </div>
@@ -74,34 +75,37 @@
                         <i class="fas fa-school"></i>
                     </div>
                     <div class="">
-                        <h2 class="card_h2">10<sup>th</sup></h2>
-                        <p>Rao's Rukmani Devi Public School, Rajmarg, MP. <br>2013-2014</p>
+                        <h2 class="card_h2">Secondary Education</h2>
+                        <p>Rao's Rukmani Devi Public School, Rajmarg, MP</p>
+                        <p>2013-2014</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="icon_p">
-                        <i class="fas fa-school"></i>
+                        <i class="fas fa-university"></i>
                     </div>
                     <div class="">
-                        <h2 class="card_h2">12<sup>th</sup></h2>
-                        <p>Chavara Vidyapeeth, Narsinghpur, MP <br>2015-2016</p>
+                        <h2 class="card_h2">Higher Secondary Education</h2>
+                        <p>Chavara Vidyapeeth, Narsinghpur, MP</p>
+                        <p>2015-2016</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="icon_p">
                         <!-- i.fas.fa-university -->
-                        <i class="fas fa-university"></i>
+                        <i class="fas fa-graduation-cap"></i>
 
                     </div>
                     <div class="">
                         <h2 class="card_h2">Bachelor of Engineering</h2>
-                        <p>Sagar Institute of Science and Technology, Bhopal, MP <br>2016-2020</p>
+                        <p>Sagar Institute of Science and Technology, Bhopal, MP</p>
+                        <p>2016-2020</p>
                     </div>
                 </div>
             </div>
 
         </section>
-        <section class="section experience">
+        <section id="experience" class="section experience">
             <h2 class="section_heading">EXPERIENCE</h2>
             <br>
             <div class="experience_wrapper">
@@ -127,10 +131,30 @@
 
                 </ul>
 
+
+                <br><br>
+                <ul>
+                    <li>Python Core and Advanced
+                        <p>Udemy</p>
+                    </li>
+                    <li>CSS Basics Certification
+                        <p>Hackerrank</p>
+                    </li>
+                    <li>Introduction to Python Programming
+                        <p>Udemy</p>
+                    </li>
+                    <li>JavaScript Basics Certification
+                        <p>Hackerrank</p>
+                    </li>
+                    <li>Python Basics Certification
+                        <p>Hackerrank</p>
+                    </li>
+                </ul>
+
             </div>
 
         </section>
-        <section class="section skills">
+        <section id="skills" class="section skills">
 
             <h2 class="section_heading">SKILLS</h2>
             <br>
@@ -451,26 +475,43 @@
 
 
         </section>
-        <section id="contact" class="section">
-            <h2 class="section_heading">CONTACT</h2>
-            <br>
-            <div class="contact">
 
-                <div>
-                    <input type="text" name="name" id="name" required placeholder="Name">
-                    <input type="email" name="email" id="email" required placeholder="Email Id">
-                    <textarea name="feedback" id="feedbback" cols="30" rows="5" placeholder="Feedback here"></textarea>
-                    <button id="btn" type="submit">Send</button>
+        <form action="#" method="post" id="site">
+            <section id="contact" class="section">
+
+                <h2 class="section_heading">CONTACT</h2>
+                <br>
+                <div class="contact">
+
+                    <div>
+                        <input type="text" name="name" id="name" required placeholder="Name">
+                        <input type="email" name="email" id="email" required placeholder="Email Id">
+                        <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Feedback here"></textarea>
+                        <button id="btn" type="submit">Send</button>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-
-
+            </section>
+        </form>
     </main>
+    <footer class="footer">
+        <div class="footer_content">
+            <span>&copy; Copyrights -  2021</span>
+            <span>Made with ❤️ by <a href="https://github.com/mahimaraghu">Mahima Raghuwanshi</a></span>
+        </div>
+    </footer>
 
-    <script src="./mahi.js"></script>
     <script src="https://kit.fontawesome.com/625c2d227e.js" crossorigin="anonymous"></script>
+    <!-- <script src="js/jquer-360.min.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/mahi.js"></script>
+    <!-- <script>
+        var offset = $(':target').offset();
+        var scrollto = offset.top - 69; // minus fixed header height
+        $('html, body').animate({
+            scrollTop: scrollto
+        }, 0);
+    </script> -->
 </body>
 
 </html>
