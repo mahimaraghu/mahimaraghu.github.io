@@ -11,10 +11,7 @@ if ((hours >= 4) && (hours <= 12)) {
     g.innerHTML = "Good Evening,";
 }
 
-let btn = document.getElementById("btn")
-btn.addEventListener('click', () => {
-    alert("Thanks for Your Feedback.")
-})
+
 let form = document.getElementById("site")
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -24,5 +21,8 @@ form.addEventListener('submit', (e) => {
         feedback: document.getElementById("feedback").value
     }
     console.log(data);
+    // TODO: Send this data to a DB using a Backend
+    alert("feedback submitted");
     form.reset();
+
 })
