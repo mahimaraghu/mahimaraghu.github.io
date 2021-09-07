@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cal.css">
+
+
+</head>
+
+<body>
+    <div id="cal">
+
+        <div id="calc">
+            <h2 style="text-align: center;letter-spacing:2px; color:#3949AB">CALCULATOR</h2>
+
+            <div id="display"></div>
+            <div id="btnparent">
+                <button class="calc_btn" data-val="(" id="leftp">(</button>
+                <button class="calc_btn" data-val=")" id="rightp">)</button>
+                <button id="DEL">&#9003;</button>
+                <button id="AC">AC</button>
+                <button class="calc_btn" data-val="7" id="7">7</button>
+                <button class="calc_btn" data-val="8" id="8">8</button>
+                <button class="calc_btn" data-val="9" id="9">9</button>
+                <button class="calc_btn" data-val="+" id="plus">+</button>
+                <button class="calc_btn" data-val="4" id="4">4</button>
+                <button class="calc_btn" data-val="5" id="5">5</button>
+                <button class="calc_btn" data-val="6" id="6">6</button>
+                <button class="calc_btn" data-val="*" id="multi">*</button>
+                <button class="calc_btn" data-val="1" id="1">1</button>
+                <button class="calc_btn" data-val="2" id="2">2</button>
+                <button class="calc_btn" data-val="3" id="3">3</button>
+                <button class="calc_btn" data-val="-" id="minus">-</button>
+                <button class="calc_btn" data-val="0" id="0">0</button>
+                <button class="calc_btn" data-val="." id="dot">.</button>
+                <button class="calc_btn" data-val="%" id="mod">%</button>
+                <button class="calc_btn" data-val="/" id="div">/</button>
+                <button id="eql">=</button>
+                <button id="history">History</button>
+
+                <!-- <button>history</button> -->
+            </div>
+        </div>
+    </div>
+    <script src="../jquery.min.js"></script>
+    <script src="cal.js"></script>
+
+</body>
+
+
+
+</html>
