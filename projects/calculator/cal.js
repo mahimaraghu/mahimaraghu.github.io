@@ -11,21 +11,23 @@ document.querySelectorAll('.calc_btn').forEach(item => {
     })
 })
 document.getElementById('eql').addEventListener('click', () => {
-    try {
+    if (document.getElementById('display').innerText) {
+        try {
 
 
-        let res = eval(document.getElementById('display').innerText);
-        if (res != "Infinity") {
-            let h = document.getElementById('display').innerText + "=" + res;
-            logs.push(h);
+            let res = eval(document.getElementById('display').innerText);
+            if (res != "Infinity" || res != "undefined") {
+                let h = document.getElementById('display').innerText + "=" + res;
+                logs.push(h);
+            }
+            document.getElementById('display').innerText = res;
+
+
+        } catch (err) {
+            // console.log("Not valid expression");
+            console.dir(err.message);
+            document.getElementById('display').innerText = "Invalid Expression";
         }
-        document.getElementById('display').innerText = res;
-
-
-    } catch (err) {
-        // console.log("Not valid expression");
-        console.dir(err.message);
-        document.getElementById('display').innerText = "Invalid Expression";
     }
 });
 document.getElementById('AC').addEventListener('click', () => {
@@ -54,8 +56,8 @@ document.getElementById('history').addEventListener('click', () => {
 });
 window.addEventListener('keyup', (e) => {
     const acceptedKeys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.', '+', '-', '*', '/', '%', '(', ')'];
-    // console.log(e)
-    // Add to Display
+    console.log(e)
+        // Add to Display
     if (acceptedKeys.includes(e.key)) {
         document.getElementById('display').innerText = document.getElementById('display').innerText + e.key;
     }
