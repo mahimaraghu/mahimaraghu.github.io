@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="display">
+        <div class="b1">
+            <h1>Available balance <span id="month"></span></h1>
+            <div id="res">0.00</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="val">
+
+            <select id="b1">
+            <option value="-">-</option>
+            <option value="+">+</option>
+        </select>
+            <input type="text" name="input" id="input" placeholder=" Add description" />
+            <input type="number" name="num" id="num" placeholder="value" />
+            <button id="add">ADD</button>
+            <button id="clear" onclick="clearData()">All Clear</button>
+        </div>
+    </div>
+    <div id="aside">
+        <div class="income">
+            <h2>Income</h2>
+            <div id="income"></div>
+        </div>
+        <div class="expenditure">
+            <h2>Expenditure</h2>
+            <div id="expenditure"></div>
+        </div>
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

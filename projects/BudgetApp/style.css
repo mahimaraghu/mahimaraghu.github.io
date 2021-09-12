@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.val select,
+.val input {
+    margin-right: 40px;
+    padding: 5px 7px;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.val select option {
+    font-family: inherit;
+    font-weight: 600;
+}
+
+#add {
+    padding: 8px 18px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+#clear {
+    padding: 8px 18px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+#aside {
+    display: flex;
+    justify-content: center;
+}
+
+#aside h2 {
+    text-align: center;
+    /* padding: 10px; */
+}
+
+#income,
+#expenditure {
+    /* background-color: #F8485E; */
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    height: 315px;
+    width: 350px;
+    margin: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    font-family: inherit;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#expenditure .item {
+    color: red;
+}
+
+#income .item {
+    color: green;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 180px;
+    background-color: #FDE49C;
+}
+
+.b1 {
+    text-align: center;
+}
+
+.b1 #res {
+    font-size: 30px;
+}
