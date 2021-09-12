@@ -1,3 +1,9 @@
+:root {
+    --green: #2E7D32;
+    --red: #F44336;
+    --bg-color: #4A148C;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -31,7 +37,7 @@ body {
 
 #add {
     padding: 8px 18px;
-    background-color: green;
+    background-color: var(--green);
     color: white;
     border-radius: 4px;
     border: 1px solid white;
@@ -41,7 +47,7 @@ body {
 
 #clear {
     padding: 8px 18px;
-    background-color: red;
+    background-color: var(--red);
     color: white;
     border-radius: 4px;
     border: 1px solid white;
@@ -81,11 +87,11 @@ body {
 }
 
 #expenditure .item {
-    color: red;
+    color: var(--red);
 }
 
 #income .item {
-    color: green;
+    color: var(--green);
 }
 
 .display {
@@ -95,7 +101,8 @@ body {
     padding: 15px;
     box-sizing: border-box;
     height: 180px;
-    background-color: #FDE49C;
+    background-color: var(--bg-color);
+    color: white;
 }
 
 .b1 {
