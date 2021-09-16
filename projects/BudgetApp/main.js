@@ -87,7 +87,8 @@ function clearData() {
     localStorage.removeItem('BudgetData');
     document.getElementById('input').value = ''
     document.getElementById('num').value = ''
-    document.getElementById('res') = 0.00
+    document.getElementById('res').innerHTML = "0.00"
+    arr = []
 }
 
 
