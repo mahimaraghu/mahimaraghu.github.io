@@ -89,6 +89,7 @@ function clearData() {
     document.getElementById('num').value = ''
     document.getElementById('res').innerHTML = "0.00"
     arr = []
+
 }
 
 
