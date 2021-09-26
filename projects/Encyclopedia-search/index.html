@@ -1,0 +1,41 @@
+<!-- search btn -> keyword ->filter with data -> multiple search display in card data(species,family,color,region(mostly found),image) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encyclopedia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>Encyclopedia of Species...</h1>
+
+        </div>
+        <!-- <div class="animal"> -->
+
+        <div class="search">
+            <!-- <img src="https://wallpaperaccess.com/full/1748372.jpg" alt=""> -->
+
+
+            <input type="search" name="search1" id="search1">
+            <span style="width: 24px; height: 24px;" onclick="getSpecies()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
+
+        </div>
+        <div class="resultbox">
+            <h3>No Results Found...</h3>
+        </div>
+    </div>
+    <!-- </div> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    padding-left: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 11, 168);
+    color: whitesmoke;
+}
+
+.search {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    width: 320px;
+    padding: 9px 16px;
+}
+
+.resultbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resultbox h3 {
+    color: white;
+}
+
+.card {
+    margin: 20px;
+}
+
+.card figure {
+    height: 320px;
+    width: 320px;
+}
+
+.card figure img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.container {
+    background: url(https://wallpaperaccess.com/full/1748372.jpg) center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container.active {
+    background: linear-gradient(to right, rgba(230, 230, 230, .3), rgba(230, 230, 230, .3)), url(https://wallpaperaccess.com/full/1748372.jpg) center center;
+}
