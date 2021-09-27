@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Playfair Display', serif;
+}
+
 .top {
-    padding-left: 10px;
-    height: 50px;
+    padding: 10px;
+    /* height: 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(40, 11, 168);
+    background-color: #4caf50;
     color: whitesmoke;
 }
 
@@ -22,13 +27,31 @@
 
 .search input {
     width: 320px;
-    padding: 9px 16px;
+    padding: 8px 16px;
+    margin-right: 15px;
+    outline: none;
+    border: none
 }
+
+
+/* .search button {
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    background-color: #fff;
+} */
 
 .resultbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: rgba(255, 255, 255, .3);
+    padding: 16px 24px;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    margin: 0 auto;
 }
 
 .resultbox h3 {
@@ -50,12 +73,16 @@
     object-fit: cover;
 }
 
-.container {
+.container-fluid {
     background: url(https://wallpaperaccess.com/full/1748372.jpg) center center;
     background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100vh;
+    padding: 0;
 }
 
-.container.active {
+.container-fluid.active {
     background: linear-gradient(to right, rgba(230, 230, 230, .3), rgba(230, 230, 230, .3)), url(https://wallpaperaccess.com/full/1748372.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
