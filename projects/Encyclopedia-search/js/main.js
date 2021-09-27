@@ -1,6 +1,7 @@
 let species;
 
-function getSpecies() {
+function getSpecies(e) {
+    e.preventDefault();
     let s = document.querySelector('#search1');
     if (s.value) {
         $('.container-fluid').addClass('active');
