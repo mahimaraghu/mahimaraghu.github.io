@@ -95,7 +95,36 @@ main {
     display: inline-block;
 }
 
-.about p {
+.container_projects {
+    display: flex;
+    justify-content: center;
+}
+
+.container_projects .card {
+    margin-right: 20px;
+}
+
+.container_projects a {
+    text-decoration: none;
+}
+
+.container_projects .btn {
+    background-color: teal;
+    padding: 8px 16px;
+    color: whitesmoke;
+    border-radius: 4px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    height: 80px;
+}
+
+.coontainer .about p {
     font-size: 14px;
     color: #444;
     margin: 10px 0;
@@ -302,4 +331,19 @@ main {
 
 .footer_content a:hover {
     border-bottom: 2px solid currentColor;
+}
+
+.project-card {
+    border-style: dashed;
+    border-width: 2px;
+}
+
+.project-card a {
+    display: inline-block;
+}
+
+.project-card-img {
+    width: 100%;
+    height: 12rem;
+    margin-bottom: 15px;
 }

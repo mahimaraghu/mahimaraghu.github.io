@@ -1,9 +1,24 @@
 let species;
+// array
+$.ajax({
+    url: "data/encyclopedia.json",
+    method: "GET",
+    success: function(res) {
+        console.log(res);
+        species = res
+    }
+
+})
 
 function getSpecies(e) {
     e.preventDefault();
     let s = document.querySelector('#search1');
-    if (s.value) {
+    if (s.value && s.value.toLowerCase() === 'all') {
+        $('.container-fluid').addClass('active');
+        document.querySelector(".rescount").innerHTML = `<h3>(All ${species.length} Results Found)</h3>`;
+
+        updateUi(species);
+    } else if (s.value && s.value.toLowerCase() !== 'all') {
         $('.container-fluid').addClass('active');
         const results = species.filter(i => i.species.toLowerCase().includes(s.value.toLowerCase()));
         document.querySelector(".rescount").innerHTML = `<h3>(${results.length} Results Found)</h3>`;
@@ -16,16 +31,6 @@ function getSpecies(e) {
         $('.container-fluid').removeClass('active');
     }
 }
-// array
-$.ajax({
-    url: "data/encyclopedia.json",
-    method: "GET",
-    success: function(res) {
-        console.log(res);
-        species = res
-    }
-
-})
 
 function updateUi(r) {
     let rb = "";
