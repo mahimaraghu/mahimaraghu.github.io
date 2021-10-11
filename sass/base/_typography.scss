@@ -1,0 +1,34 @@
+%head {
+    text-transform: uppercase;
+    font-weight: $fw-semi-bold;
+    color: $c-black;
+}
+
+.sec-heading {
+    @extend %head;
+    margin: 1.5rem 0;
+    // text-decoration: underline;
+    // text-decoration-style: wavy;
+    //
+    // padding-bottom: 1.5rem;
+    // border-bottom: 2px dashed currentColor;
+    max-width: 30rem;
+    color: $c-black;
+    font-size: 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+    &:before,
+    &:after {
+        content: "";
+        height: 3px;
+        background-color: currentColor;
+    }
+}
+
+.sec-heading2 {
+    @extend %head;
+    font-weight: $fw-semi-bold;
+    font-size: 1.8rem;
+}

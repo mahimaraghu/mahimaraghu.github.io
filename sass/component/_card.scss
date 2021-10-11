@@ -1,0 +1,26 @@
+.edu-card {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 4px;
+    max-width: 72rem;
+    margin: 3rem auto;
+    &__img {
+        width: 100%;
+        i {
+            font-size: 4.2rem;
+            color: $c-4;
+        }
+    }
+    &__title {
+        font-size: 2rem;
+        font-weight: $fw-bold;
+    }
+    &__text {
+        font-weight: $fw-default;
+        color: #333;
+    }
+    &__meta {
+        font-weight: $fw-semi-bold;
+        color: #212121;
+    }
+}

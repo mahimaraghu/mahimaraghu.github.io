@@ -2,52 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahima Raghuwanshi</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">   -->
-    <link rel="stylesheet" href="css/mahi.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- dev -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <!-- prod -->
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">
+            <img src="./images/Logo-1x.png" alt="Mahima Raghuwanshi" srcset="images/Logo-1x.png 1x, images/Logo-2x.png 2x">
+            <span>Mahima R.</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">
+                        <i class="fas fa-home"></i>&nbsp;Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-info-circle"></i>&nbsp;About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-drafting-compass"></i>&nbsp;Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-chart-line"></i>&nbsp;Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-tasks"></i>&nbsp;Projects</a>
+                </li>
 
-    <nav class="nav">
-        <h1>Mahima Raghuwanshi</h1>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-address-book"></i>&nbsp;Contact</a>
 
-
-        <span>
-<a href="/">Home</a>
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
-<a href="#projects">Projects</a>
-<a href="https://github.com/mahimaraghu" target="_blank">GitHub</a>
-</span>
-
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="mailto:mahimaraghu22@gmail.com" target="_top">
+                                <i class="fas fa-envelope-open-text"></i>&nbsp;Email</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://github.com/mahimaraghu" target="_blank">
+                                <i class="fab fa-github"></i>&nbsp;Github</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fab fa-linkedin"></i>&nbsp;LinkedIn</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <main>
-
-        <section class="hero">
+    <main class="main">
+        <header class="header abs_center">
             <div class="">
-                <div class="greet"></div>
-                <h2>I'm Mahima Raghuwanshi</h2>
+                <span id="greet">Good Morning,</span>
+                <h1>I'm Mahima Raghuwanshi</h1>
                 <p>Automation Engineer and CS Graduate</p>
             </div>
-        </section>
+        </header>
+        <section class="sec sec-about">
+            <h2 class="sec-heading">&bull;&nbsp;About Me&nbsp;&bull;</h2>
 
-        <section class="section section_about" id="about">
-            <h2 class="section_heading">About Me</h2>
-            <br>
-            <div class="container_about">
-
-                <img class="photo" src="images/mahima.jpg" alt="Mahima Raghuwanshi">
-
-                <div class="about">
+            <div class="sec-about-container">
+                <div class="about-info">
                     <p>Hey Thanks for being here.</p>
                     <p>I am an Automation Engineer at <a class="link" target="_blank" href="https://hcltech.com">HCL Technologies, Noida.</a>. I have completed my B.E. in Computer Science and Engineering from
                         <a class="link" href="https://www.sirtbhopal.ac.in/">SIRT Bhopal, MP.</a>
@@ -64,488 +99,64 @@
                         We only live once. So keep trying your best and not just stick to one thing. Always try to move forwards no matter what, Things will fall in place.
                     </p>
                 </div>
-
+                <img src="./images/mahima.jpg" alt="Mahima Raghuwanshi" class="about-img">
             </div>
-
         </section>
-        <section class="section education">
-            <h2 class="section_heading">EDUCATION</h2>
-            <div class="edu_wrapper">
-                <div class="card">
-                    <div class="icon_p">
+        <section class="sec sec-education">
+            <h2 class="sec-heading">&bull;&nbsp;Education&nbsp;&bull;</h2>
+
+            <div class="sec-education-container">
+                <div class="edu-card">
+                    <figure class="edu-card__img">
                         <i class="fas fa-school"></i>
-                    </div>
-                    <div class="">
-                        <h2 class="card_h2">Secondary Education</h2>
-                        <p>Rao's Rukmani Devi Public School, Rajmarg, MP</p>
-                        <p>2013-2014</p>
-                    </div>
+                    </figure>
+                    <h3 class="edu-card__title">Secondary Education</h3>
+                    <p class="edu-card__text">Rao's Rukmani Devi Public School, Rajmarg, Madhya Pradesh</p>
+                    <span class="edu-card__meta">2013-2014</span>
                 </div>
-                <div class="card">
-                    <div class="icon_p">
+                <!-- ------ -->
+                <div class="edu-card">
+                    <figure class="edu-card__img">
                         <i class="fas fa-university"></i>
-                    </div>
-                    <div class="">
-                        <h2 class="card_h2">Higher Secondary Education</h2>
-                        <p>Chavara Vidyapeeth, Narsinghpur, MP</p>
-                        <p>2015-2016</p>
-                    </div>
+                    </figure>
+                    <h3 class="edu-card__title">Higher Secondary Education</h3>
+                    <p class="edu-card__text">Chavara Vidyapeeth, Narsinghpur, Madhya Pradesh</p>
+                    <span class="edu-card__meta">2015-2016</span>
                 </div>
-                <div class="card">
-                    <div class="icon_p">
-                        <!-- i.fas.fa-university -->
+                <!-- ------ -->
+                <div class="edu-card">
+                    <figure class="edu-card__img">
                         <i class="fas fa-graduation-cap"></i>
-
-                    </div>
-                    <div class="">
-                        <h2 class="card_h2">Bachelor of Engineering</h2>
-                        <p>Sagar Institute of Science and Technology, Bhopal, MP</p>
-                        <p>2016-2020</p>
-                    </div>
+                    </figure>
+                    <h3 class="edu-card__title">Bachelor of Engineering</h3>
+                    <p class="edu-card__text">Sagar Institute of Science and Technology, Bhopal, Madhya Pradesh</p>
+                    <span class="edu-card__meta">2016-2020</span>
                 </div>
+                <!-- ------ -->
             </div>
-
         </section>
-        <section id="experience" class="section experience">
-            <h2 class="section_heading">EXPERIENCE</h2>
-            <br>
-            <div class="experience_wrapper">
-                <ul>
-                    <li>
-                        Automation Engineer at HCL
-                        <p>I write PowerShell and Bash Scripts to automate routine tasks. Also worked on tools like ITPAM.</p>
-                    </li>
-
-                    <li>
-                        Blockchain for Counterfeit Drugs.
-                        <p>Worked on building the frontend where authenticated user can create, modify and fetch the details about particular drug. </p>
-                    </li>
-                    <li>
-                        Prediction Of Diabetes on the basis of patient’s data along with their precautions.
-                        <p>Researched on various parameters which can cause diabetes.</p>
-                    </li>
-                    <li>
-                        Python Training at CRISP, Bhopal
-                        <p>Learned some real life applications such as bulk mailing and tkinter tool</p>
-                    </li>
-
-
-                </ul>
-
-
-                <br><br>
-                <ul>
-                    <li>Python Core and Advanced
-                        <p>Udemy</p>
-                    </li>
-                    <li>CSS Basics Certification
-                        <p>Hackerrank</p>
-                    </li>
-                    <li>Introduction to Python Programming
-                        <p>Udemy</p>
-                    </li>
-                    <li>JavaScript Basics Certification
-                        <p>Hackerrank</p>
-                    </li>
-                    <li>Python Basics Certification
-                        <p>Hackerrank</p>
-                    </li>
-                </ul>
-
-            </div>
-
-        </section>
-        <section id="skills" class="section skills">
-
-            <h2 class="section_heading">SKILLS</h2>
-            <br>
-            <div class="skills_wrapper">
-
-                <div class="d_f">
-                    <h3>Languages</h3>
-                    <ul class="skill_list">
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>Python</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>PowerShell</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>Bash</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>JavaScript</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>HTML, CSS</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>Java</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>C, C++</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                    </ul>
-                </div>
-                <div class="d_f">
-                    <h3>Other Skills</h3>
-                    <ul class="skill_list">
-                        <li class="skill_item">
-                            <span>Linux</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>Office 365</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>MySQL</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>Version Control (git, GitHub)</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                    </ul>
-                </div>
-                <div class="d_f">
-                    <h3>Tools (Automation)</h3>
-                    <ul class="skill_list">
-                        <li class="skill_item">
-                            <span>CA ITPAM</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>vRO</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                        <li class="skill_item">
-                            <span>Ansible</span>
-                            <div class="level">
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star filled">
-                    <i class="fas fa-star"></i>
-                </span>
-                                <span class="star">
-                    <i class="far fa-star"></i>
-                </span>
-                            </div>
-                        </li>
-                        <!-- --- -->
-                    </ul>
-                </div>
-
-            </div>
-
-
-        </section>
-
-        <section class="section section_projects" id="projects">
-            <h2 class="section_heading">MY PROJECTS</h2>
-            <br>
-            <div class="container_projects">
-                <div class="card project-card" style="width: 18rem;">
-                    <img src="./images/project_budget.png" class="project-card-img" alt="BudgetApp">
-                    <div class="card-body">
-                        <h5 class="card-title">BUDGET APP</h5>
-                        <p class="card-text">Find your Savings here...</p>
-                        <a href="https://mahimaraghu.github.io/projects/BudgetApp/" target="_blank" class="btn">DEMO</a>
-                    </div>
-                </div>
-                <div class="card project-card" style="width: 18rem;">
-                    <img src="./images/project_enc.png" class="project-card-img" alt="Encyclopedia-Search">
-                    <div class="card-body">
-                        <h5 class="card-title">ENCYCLOPEDIA-SEARCH</h5>
-                        <p class="card-text">Search species where they are found mainly and some unknown stuffs.</p>
-                        <a href="https://mahimaraghu.github.io/projects/Encyclopedia-search/" target="_blank" class="btn">DEMO</a>
-                    </div>
-                </div>
-                <div class="card project-card" style="width: 18rem;">
-                    <img src="./images/project_calc.jpg" class="project-card-img" alt="Calculator">
-                    <div class="card-body">
-                        <h5 class="card-title">CALCULATOR</h5>
-                        <p class="card-text">A simple Calculator made with html, css and Js.</p>
-                        <a href="https://mahimaraghu.github.io/projects/calculator/" target="_blank" class="btn">DEMO</a>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <form action="#" method="post" id="site">
-            <section id="contact" class="section">
-
-                <h2 class="section_heading">CONTACT</h2>
-                <br>
-                <div class="contact">
-
-                    <div>
-                        <input type="text" name="name" id="name" required placeholder="Name" required>
-                        <input type="email" name="email" id="email" required placeholder="Email Id" required>
-                        <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Feedback here" required></textarea>
-                        <button id="btn" type="submit">Send</button>
-                    </div>
-                </div>
-
-            </section>
-        </form>
     </main>
     <footer class="footer">
-        <div class="footer_content">
-            <span>&copy; Copyrights -  2021</span>
-            <span>Made with ❤️ by <a href="https://github.com/mahimaraghu">Mahima Raghuwanshi</a></span>
+
+        <img src="./images/Logo2.svg" alt="Mahima Raghuwanshi" class="footer-logo">
+
+        <div class="d-flex justify-content-between footer-meta">
+            <div class="copy">
+                <i class="far fa-copyright"></i>
+                <span>Copyrights. 2021</span>
+            </div>
+            <div class="meta">
+                Made with <i class="fas fa-heart"></i> by <a href="https://github.com/mahimaraghu" class="link">Mahima</a>
+            </div>
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/625c2d227e.js" crossorigin="anonymous"></script>
-    <!-- <script src="js/jquer-360.min.js"></script> -->
+
+
     <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="js/mahi.js"></script>
-    <!-- <script>
-        var offset = $(':target').offset();
-        var scrollto = offset.top - 69; // minus fixed header height
-        $('html, body').animate({
-            scrollTop: scrollto
-        }, 0);
-    </script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/625c2d227e.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

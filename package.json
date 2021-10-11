@@ -1,0 +1,20 @@
+{
+    "name": "portfolio-2.0",
+    "version": "2.0.0",
+    "description": "my portfolio",
+    "main": "main.js",
+    "scripts": {
+        "start": "npm run css:dev",
+        "css:dev": "sass sass/main.scss css/style.css --watch",
+        "css:prefix": "npx postcss --use autoprefixer -o css/style.css css/style.css",
+        "css:build": "sass css/style.css  css/style.min.css --style=compressed "
+    },
+    "author": "Mahima Raghuwanshi",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^10.3.6",
+        "postcss": "^8.3.8",
+        "postcss-cli": "^9.0.1",
+        "sass": "^1.42.1"
+    }
+}
