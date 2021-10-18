@@ -1,0 +1,41 @@
+{
+    "Trainings": [{
+            "title": "Automation Engineer at HCL",
+            "desc": "I write PowerShell and Bash Scripts to automate routine tasks. Also worked on tools like ITPAM."
+        },
+        {
+            "title": "Blockchain for Counterfeit Drugs.",
+            "desc": "Worked on building the frontend where authenticated user can create, modify and fetch the details about particular drug."
+        },
+        {
+            "title": "Prediction Of Diabetes on the basis of patient’s data along with their precautions.",
+            "desc": "Researched on various parameters which can cause diabetes."
+        },
+        {
+            "title": "Python Training at CRISP, Bhopal",
+            "desc": "Learned some real life applications such as bulk mailing and tkinter tool"
+        }
+    ],
+
+    "Certifications": [{
+            "title": "Python Core and Advanced",
+            "desc": "Udemy"
+        },
+        {
+            "title": "CSS Basics Certification",
+            "desc": "Hackerrank"
+        },
+        {
+            "title": "Introduction to Python Programming",
+            "desc": "Udemy"
+        },
+        {
+            "title": "JavaScript Basics Certification",
+            "desc": "Hackerrank"
+        },
+        {
+            "title": "Python Basics Certification",
+            "desc": "Hackerrank"
+        }
+    ]
+}

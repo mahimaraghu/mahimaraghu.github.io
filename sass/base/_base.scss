@@ -5,6 +5,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 }
 
 html {
@@ -15,6 +17,7 @@ html {
 }
 
 body {
+    background-color: $c-body;
     font-size: 1.5rem;
     font-family: $font;
     font-weight: $fw-normal;

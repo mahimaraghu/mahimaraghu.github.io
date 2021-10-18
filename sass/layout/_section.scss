@@ -7,7 +7,7 @@
 }
 
 .sec-about {
-    background-color: #f5f5f5;
+    background-color: $c-body;
 }
 
 .sec-about-container {
@@ -49,4 +49,8 @@
     &-container {
         padding-bottom: 3rem;
     }
+}
+
+.sec-exp {
+    background-color: #eee;
 }

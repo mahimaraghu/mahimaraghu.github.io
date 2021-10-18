@@ -1,0 +1,23 @@
+[{
+        "title": "BUDGET APP",
+        "imgLink": "../images/project_budget.png",
+        "date": "12/09/2021",
+        "desc": "A simple monthly budget calculator.",
+        "demoLink": "BudgetApp/"
+    },
+    {
+        "title": "ENCYCLOPEDIA-SEARCH",
+        "imgLink": "../images/project_enc.png",
+        "date": "26/09/2021",
+        "desc": "Search species where they are found mainly and some unknown stuffs.",
+        "demoLink": "Encyclopedia-search/"
+    },
+    {
+        "title": "CALCULATOR",
+        "imgLink": "../images/project_calc.jpg",
+        "date": "07/09/2021",
+        "desc": "A simple Calculator made with html, css and Js.",
+        "demoLink": "calculator/"
+
+    }
+]

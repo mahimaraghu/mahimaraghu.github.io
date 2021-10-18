@@ -1,0 +1,91 @@
+{
+    "languages": [{
+            "icon": "fab fa-python",
+            "name": "Python",
+            "stars": 5
+        },
+        {
+            "icon": "fab fa-windows",
+            "name": "PowerShell",
+            "stars": 4
+        },
+        {
+            "icon": "fas fa-terminal",
+            "name": "Bash",
+            "stars": 4
+        },
+        {
+            "icon": "fab fa-js-square",
+            "name": "JavaScript",
+            "stars": 3
+        },
+        {
+            "icon": "fab fa-html5",
+            "name": "HTML, CSS",
+            "stars": 4
+        },
+        {
+            "icon": "fab fa-java",
+            "name": "Java",
+            "stars": 3
+        },
+        {
+            "icon": "fas fa-code",
+            "name": "C, C++",
+            "stars": 3
+        }
+    ],
+    "Other Skills": [{
+            "icon": "fab fa-linux",
+            "name": "Linux",
+            "stars": 4
+        },
+        {
+            "icon": "fas fa-mail-bulk",
+            "name": "Office 365",
+            "stars": 4
+        },
+        {
+            "icon": "fas fa-database",
+            "name": "MySQL",
+            "stars": 3
+        },
+        {
+            "icon": "fab fa-github",
+            "name": "Version Control (git, GitHub)",
+            "stars": 5
+
+        }
+    ],
+    "Tools (Automation)": [{
+            "icon": null,
+            "name": "CA ITPAM",
+            "stars": 4
+        },
+        {
+            "icon": null,
+            "name": "Ansible",
+            "stars": 3
+        },
+        {
+            "icon": null,
+            "name": "vRO",
+            "stars": 3
+        },
+        {
+            "icon": "fab fa-php",
+            "name": "PHP",
+            "stars": 3
+        },
+        {
+            "icon": "fab fa-jenkins",
+            "name": "Jenkins",
+            "stars": 3
+        },
+        {
+            "icon": "fab fa-docker",
+            "name": "Docker",
+            "stars": 2
+        }
+    ]
+}
