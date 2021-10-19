@@ -38,3 +38,9 @@
         }
     }
 }
+
+.proj_container {
+    min-height: 42rem;
+    display: flex;
+    justify-content: space-between;
+}

@@ -24,3 +24,97 @@
         color: #212121;
     }
 }
+
+// -----------------------------------
+.proj-card {
+    // FUNCTIONALITY
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    width: 32rem;
+    min-height: 36rem;
+    &__side {
+        min-height: 36rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($c-black, .15);
+        &--front {
+            background-color: $c-white;
+        }
+        &--back {
+            transform: rotateY(180deg);
+            background-image: linear-gradient(to right bottom, $c-4, $c-5);
+        }
+    }
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $c-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    }
+    &__heading-span {
+        padding: .7rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        background-image: linear-gradient(to right bottom, rgba($c-4, .85), rgba($c-5, .85));
+    }
+    &__details {
+        padding: 3rem;
+        .meta {
+            margin: 1rem 0;
+        }
+    }
+    // FRONT SIDE STYLING
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+        a {
+            display: inline-block;
+            padding: 1rem 1.8rem;
+            background-color: #fff;
+            border-radius: 50rem;
+            text-decoration: none;
+            font-size: 1.8rem;
+            box-shadow: .2rem;
+            color: $c-black;
+            font-weight: $fw-semi-bold;
+            // box-shadow: 2px 4px 8px lighten($c-5, 80%);
+            transition: transform 300ms;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

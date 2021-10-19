@@ -1,23 +1,26 @@
 [{
         "title": "BUDGET APP",
-        "imgLink": "../images/project_budget.png",
+        "imgLink": "https://mahimaraghu.github.io/images/project_budget.png",
         "date": "12/09/2021",
         "desc": "A simple monthly budget calculator.",
-        "demoLink": "BudgetApp/"
+        "demoLink": "https://mahimaraghu.github.io/projects/BudgetApp/",
+        "tag": "HTML, CSS, JS"
     },
     {
         "title": "ENCYCLOPEDIA-SEARCH",
-        "imgLink": "../images/project_enc.png",
+        "imgLink": "https://mahimaraghu.github.io/images/project_enc.png",
         "date": "26/09/2021",
         "desc": "Search species where they are found mainly and some unknown stuffs.",
-        "demoLink": "Encyclopedia-search/"
+        "demoLink": "https://mahimaraghu.github.io/projects/Encyclopedia-search/",
+        "tag": "JS, AJAX, REST APIs"
     },
     {
         "title": "CALCULATOR",
-        "imgLink": "../images/project_calc.jpg",
+        "imgLink": "https://mahimaraghu.github.io/images/project_calc.jpg",
         "date": "07/09/2021",
-        "desc": "A simple Calculator made with html, css and Js.",
-        "demoLink": "calculator/"
+        "desc": "A simple Calculator for simple Maths.",
+        "demoLink": "https://mahimaraghu.github.io/projects/calculator/",
+        "tag": "HTML5, CSS3, JS"
 
     }
 ]

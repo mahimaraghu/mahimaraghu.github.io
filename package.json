@@ -1,13 +1,13 @@
 {
     "name": "portfolio-2.0",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "my portfolio",
     "main": "main.js",
     "scripts": {
         "start": "npm run css:dev",
         "css:dev": "sass sass/main.scss css/style.css --watch",
         "css:prefix": "npx postcss --use autoprefixer -o css/style.css css/style.css",
-        "css:build": "sass css/style.css  css/style.min.css --style=compressed "
+        "css:build": "sass css/style.css  css/style.css --style=compressed "
     },
     "author": "Mahima Raghuwanshi",
     "license": "MIT",
