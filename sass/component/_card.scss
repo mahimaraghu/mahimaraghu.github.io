@@ -32,9 +32,10 @@
     -moz-perspective: 150rem;
     position: relative;
     width: 32rem;
-    min-height: 36rem;
+    min-height: 38rem;
+    margin: 2.4rem;
     &__side {
-        min-height: 36rem;
+        min-height: 38rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
