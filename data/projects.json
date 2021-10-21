@@ -22,5 +22,14 @@
         "demoLink": "https://mahimaraghu.github.io/projects/calculator/",
         "tag": "HTML5, CSS3, JS"
 
+    },
+    {
+        "title": "CountDown",
+        "imgLink": "",
+        "date": "21/10/2021",
+        "desc": "You can Count your workout or your practice",
+        "demoLink": "https://mahimaraghu.github.io/projects/CountDown/",
+        "tag": "HTML5, CSS3, JS"
+
     }
 ]
