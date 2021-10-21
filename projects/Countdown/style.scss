@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300;&display=swap');
+$c: #F4A442;
+$c-bg: crimson;
+$c-body:#454545;
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    // font-family: 'Gluten', cursive;
+    font-family: 'Concert One';
+    font-weight: 400;
+    color: $c-body;
 }
 
 .Center {
@@ -12,14 +24,22 @@
 }
 
 .sw {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
     button {
         padding: 8px 16px;
-        background-color: aqua;
+        background-color: $c;
         color: black;
         border-radius: 4px;
-        border: 1px solid black;
-        margin-right: 30px;
+        border: 2px solid $c;
+        // border: none;
+        outline: none;
+        font-family: inherit;
+        cursor: pointer;
+        transition: tranform 200;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     select {
         padding: 6px 12px;
@@ -32,7 +52,7 @@
 }
 
 main {
-    background-color: crimson;
+    background-color: $c-bg;
 }
 
 .container {
