@@ -33,7 +33,7 @@
     },
     {
         "title": "Stopwatch",
-        "imgLink": "https://mahimaraghu.github.io/images/project_stopwatch.jpg",
+        "imgLink": "../images/project_stopwatch.jpg",
         "date": "22/10/2021",
         "desc": "A simple stopwatch to track your speed.",
         "demoLink": "https://mahimaraghu.github.io/projects/Stopwatch/",
