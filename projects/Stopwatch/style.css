@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Concert One";
+    font-weight: 400;
+    color: #454545;
+}
+
+.Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sw {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sw button {
+    padding: 8px 16px;
+    background-color: teal;
+    color: white;
+    border-radius: 4px;
+    border: 2px solid teal;
+    outline: none;
+    font-family: inherit;
+    cursor: pointer;
+    transition: tranform 200;
+}
+
+.sw button:hover {
+    transform: scale(1.1);
+}
+
+.sw select {
+    padding: 6px 12px;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+main {
+    background-image: linear-gradient(to bottom right, crimson, yellow);
+}
+
+.container {
+    padding: 20px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 30px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.container #display {
+    color: black;
+    height: 50px;
+    margin: 30px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+}
+
+.container #tl_display {
+    display: block;
+    background: #dfdfdf;
+    height: 240px;
+    overflow: auto;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding: 25px
+}
+
+
+/*# sourceMappingURL=style.css.map */

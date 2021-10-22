@@ -30,6 +30,14 @@
         "desc": "You can Count your workout or your practice",
         "demoLink": "https://mahimaraghu.github.io/projects/Countdown/",
         "tag": "HTML5, CSS3, JS"
+    },
+    {
+        "title": "Stopwatch",
+        "imgLink": "https://mahimaraghu.github.io/images/project_stopwatch.jpg",
+        "date": "22/10/2021",
+        "desc": "A simple stopwatch to track your speed.",
+        "demoLink": "https://mahimaraghu.github.io/projects/Stopwatch/",
+        "tag": "HTML5, CSS3, JS"
 
     }
 ]
