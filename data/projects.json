@@ -33,11 +33,18 @@
     },
     {
         "title": "Stopwatch",
-        "imgLink": "../images/project_stopwatch.jpg",
+        "imgLink": "https://mahimaraghu.github.io/images/project_stopwatch.jpg",
         "date": "22/10/2021",
         "desc": "A simple stopwatch to track your speed.",
         "demoLink": "https://mahimaraghu.github.io/projects/Stopwatch/",
         "tag": "HTML5, CSS3, JS"
-
+    },
+    {
+        "title": "Guess My Number",
+        "imgLink": "https://mahimaraghu.github.io/images/project_gmn.jpg",
+        "date": "16/11/2021",
+        "desc": "A fun game for your leisure.",
+        "demoLink": "https://mahimaraghu.github.io/projects/Guess-My-Number/",
+        "tag": "HTML5, CSS3, JS"
     }
 ]
