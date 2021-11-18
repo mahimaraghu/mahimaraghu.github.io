@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Guess My Number!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game</title>
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sarojkumar007/m-icons/dist/m-icons-round.min.css">
+	<link rel="stylesheet" href="style2.css">
 </head>
-
 <body>
-    <header>
-        <h1>Guess My Number!</h1>
-        <p class="between">(Between 1 and 20)</p>
-        <button class="btn again">Again!</button>
-        <div class="number">?</div>
-    </header>
-    <main>
-        <section class="left">
-            <input type="number" class="guess" />
-            <button class="btn check">Check!</button>
-        </section>
-        <section class="right">
-            <p class="message">Start Guessing...</p>
-            <p class="label-score">💯 Score: <span class="score">20</span></p>
-            <p class="label-highscore">
-                🥇 Highscore: <span class="highscore">0</span>
-            </p>
-        </section>
-    </main>
-    <script src="script.js"></script>
-</body>
+	<header>
+		<div class="top">
+			<button class="btn again">
+				<i class="m-icon-round">replay</i>
+			Again</button>
+			<span class="between">&lt; Between 1 to 20 &gt;</span>
+		</div>
+		<h1 class="heading">
+			<span class="left"></span>
+			<span class="text">Guess My Number</span>
+			<span class="right"></span>
+		</h1>
+		<div class="box">?</div>
+	</header>
+	<main>
+		<form action="#" class="left1">
+			<input type="number" name="num" id="num" class= "guess">
+			<button class="btn check" type="submit">
+				<i class="m-icon-round">task_alt</i> Check
+			</button>
+		</form>
 
+		<div class="right1">
+			<div class="">
+			<h1 class="message">
+			Start Guessing...</h1>
+			<h2 class="score">
+				<i class="m-icon-round">sports_score</i>
+			Score : 0</h2>
+			<h2 class="highscore">
+			<i class="m-icon-round">emoji_events</i>
+		HighScore : 0</h2>
+			</div>
+		</div>
+	</main>
+</body>
 </html>
