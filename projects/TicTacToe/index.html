@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<button data-m-trigger="#takeUser" class="btn start">Start Game</button>
+	<button class="btn reset">Play Again</button>
+	<main class="main">
+		<h1>TIC TAC TOE</h1>
+		<div class="scoreArea">
+			<section class="s">
+				<span id="Oname">O</span>'s Score:&nbsp;
+				<span id="Oscore">0</span>
+			</section>
+			<span id="info"></span>
+			<section class="s">
+				<span id="Xname">X</span>'s Score:&nbsp;
+				<span id="Xscore">0</span>
+			</section>
+		</div>
+		<div class="gameArea center">
+			<div class="container">
+				<button class="box box1" data-input="1" disabled></button>
+				<button class="box box2" data-input="2" disabled></button>
+				<button class="box box3" data-input="3" disabled></button>
+				<button class="box box4" data-input="4" disabled></button>
+				<button class="box box5" data-input="5" disabled></button>
+				<button class="box box6" data-input="6" disabled></button>
+				<button class="box box7" data-input="7" disabled></button>
+				<button class="box box8" data-input="8" disabled></button>
+				<button class="box box9" data-input="9" disabled></button>
+			</div>
+		</div>
+	</main>
+	
+	<div class="modal-overlay"></div>
+	<div class="modal" id="takeUser">
+		<span class="modal-close" data-m-close>❌</span>
+		<div class="modal-body">
+			<form action="#!" class="players" id="playerNameForm" method="POST" autocomplete="off" spellcheck="false">
+				<label for="player1">Player1</label>
+				<input type="text" name="player1" id="player1" required>
+				<br>
+				<label for="player2">Player2</label>
+				<input type="text" name="player2" id="player2" required>
+				<br>
+				<button class="btn ok">Start</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>

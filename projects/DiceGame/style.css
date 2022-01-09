@@ -1,0 +1,158 @@
+@font-face {
+    font-family: Google;
+    src: url(https://sarojkumar007.github.io/doc/fonts/google-sans-light.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Google;
+    src: url(https://sarojkumar007.github.io/doc/fonts/google-sans-bold.woff2) format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    /* background-image: linear-gradient(to left, #FF5F7E, #B000B9); */
+    background-color: crimson;
+    font-family: Google;
+    font-weight: 400;
+}
+
+.main {
+    height: 100vh;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 700px;
+    height: 450px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    /* background-color: #fff; */
+    /* background-image: linear-gradient(90deg, rgba(255, 91, 71, .9) 0%, rgba(255, 91, 71, .9) 50%, #9F5F80 50%); */
+    background-size: 100%;
+    display: flex;
+}
+
+.box_item {
+    padding: 30px;
+    width: 350px;
+    height: 450px;
+    background-color: #dedede;
+    position: relative;
+    text-align: center;
+}
+
+.box_item.active {
+    background-color: #fff;
+}
+
+.heading {
+    /* padding: 25px; */
+    /* color: black; */
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.Cscore {
+    position: absolute;
+    left: 25%;
+    bottom: 20%;
+    background-color: crimson;
+    color: white;
+    width: 50%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.Tscore {
+    margin-top: 20px;
+    color: crimson;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.score {
+    margin-top: 10px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btns {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    height: 450px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    font-family: inherit;
+    padding: 8px 16px;
+    border-radius: 500px;
+    background-color: white;
+    border: none;
+    outline: none;
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, .15);
+    transform: translateY(-3px);
+    transition: all .2s;
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.image {
+    height: 90px;
+    width: 90px;
+    margin-top: 60px;
+    box-shadow: 2px 8px 20px rgba(0, 0, 0, .3);
+}
+
+.newGame {
+    margin-top: 20px;
+}
+
+.rollDice {
+    margin-top: 90px;
+}
+
+.hold {
+    margin-top: 15px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.wining-player {
+    background-color: green;
+    color: white;
+}

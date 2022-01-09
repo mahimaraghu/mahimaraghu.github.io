@@ -46,5 +46,37 @@
         "desc": "A fun game for your leisure.",
         "demoLink": "https://mahimaraghu.github.io/projects/Guess-My-Number/",
         "tag": "HTML5, CSS3, JS"
+    },
+    {
+        "title": "Rock Paper Scissors",
+        "imgLink": "https://mahimaraghu.github.io/images/project_rps.jpg",
+        "date": "16/12/2021",
+        "desc": "Classic Rock Paper Scissors Game made with HTML,CSS,JS.",
+        "demoLink": "https://mahimaraghu.github.io/projects/RockPaperScissors/",
+        "tag": "HTML5, CSS3, JS"
+    },
+    {
+        "title": "Tic-Tac-Toe",
+        "imgLink": "https://mahimaraghu.github.io/images/project_tictactoe.png",
+        "date": "18/12/2021",
+        "desc": "A fun game for your leisure.",
+        "demoLink": "https://mahimaraghu.github.io/projects/TicTacToe/",
+        "tag": "HTML5, CSS3, JS"
+    },
+    {
+        "title": "Random Hex Color",
+        "imgLink": "https://mahimaraghu.github.io/images/project_hex.jpg",
+        "date": "02/01/2022",
+        "desc": "Generates random Hex Color codes for your next project.",
+        "demoLink": "https://mahimaraghu.github.io/projects/RandomHexColor/",
+        "tag": "HTML5, CSS3, JS"
+    },
+    {
+        "title": "Dice Game",
+        "imgLink": "https://mahimaraghu.github.io/images/project_dice.jpg",
+        "date": "16/11/2021",
+        "desc": "A 2 Player interactive dice game.",
+        "demoLink": "https://mahimaraghu.github.io/projects/DiceGame/",
+        "tag": "HTML5, CSS3, JS"
     }
 ]

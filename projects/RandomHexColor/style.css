@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+:root{
+	--font: 'Source Code Pro', monospace;;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	padding: 10px;
+	font-family: var(--font);
+	font-weight: 400;
+	display: flex;
+	
+	overflow: hidden;
+}
+main{
+	height: calc(100vh - 30px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	flex: 1;
+	position: relative;
+}
+.box{
+	font-size: 30px;
+	border-radius: 8px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 20px;
+	background-color:#fff;
+	box-shadow: 4px 8px 20px rgba(0,0,0,.4);
+}
+.check{
+	padding: 9px 18px;
+	margin-top: 10px;
+	border: none;
+	background-color: #999;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 22px;
+	cursor: pointer;
+	font-family: inherit;
+}
+#color{
+	padding: 6px 15px;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	background-color: #dedede;
+	color: black;
+	font-size: 18px;
+	text-align: center;
+	width: 50%;
+	margin-right: 10px;
+}
+.code{
+	margin-top: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.code input{
+	font-family: inherit;
+}
+.code .material-icons{
+	cursor: pointer;
+	transform: translateY(-2px);
+	transition: all .2s;
+}
+.code .material-icons:active{
+	transform: translateY(0);
+}
+.msg{
+	font-size: 15px;
+	text-transform: capitalize;
+}
+aside{
+	background-color: #fff;
+	width: 0;
+	overflow: hidden;
+	transition: width 250ms;
+}
+.color_box{
+	overflow-y: auto;
+	height: calc(100vh - 80px);
+}
+.color{
+	display: flex;
+	padding: 8px 10px;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	align-items: center;
+	margin-bottom: 12px;
+  cursor: pointer;
+	}
+.bg{
+	height: 20px;
+	width: 20px;
+	margin-right: 8px;
+}
+aside h2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.menu{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+}
+.active{
+	width: 240px;
+	padding-left: 10px;
+}
+
+
